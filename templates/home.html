@@ -10,20 +10,27 @@
         height: 360px;
         width: 100%;
         object-fit: cover;
+        margin-bottom: 16px;
       }
     </style>
   </head>
   <body>
+    {% include 'nav.html' %}
+    <img class="img-fluid" id="banner" src="static/banners.jpg" >
     <div class="container">
       <h1 class="text-center mt-2 mb-4">
-        {{company_name}} Careers</h1>
-      <img class="img-fluid" id="banner" src="static/banners.jpg" >
-      <h2 class="text-center">
-        About
-      </h2>
-      <p class="lead">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-      </p>
+        {{company_name}} Careers
+      </h1>
+      <div class="row" style="margin-bottom:16px;">
+        <div class="col-md-6">
+          <p class="lead">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+        </div>  
+        <div class = "d-none d-md-block col-md-6">
+          <img src="/static/people.jpg" style="height:320px;border-radius:4px;">
+        </div>
+      </div>
       <h2 class="text-center mt-2 mb-4">Open Positions</h2>
       <p>
         {% for job in jobs %}
@@ -31,10 +38,9 @@
         {% endfor %}
       </p>
       <div class="text-center">
-        <button class="btn btn-primary btn-lg">Contact Us</button>
-        <p class="mt-4">Copytight 2023, AZAO</p>
+        <a class="btn btn-primary btn-lg" href="mailto:hello@jovian.ai?subject=ask question about ">Contact Us</a>
       </div>
     </div>
-
+    {% include 'footer.html' %}
   </body>
 </html>
