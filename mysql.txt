@@ -1,0 +1,4 @@
+database: jovincareers
+username: lecyohrec1w4m8jbalj9
+host: us-east.connect.psdb.cloud
+password: pscale_pw_Av5oQiypb5Wd9LDHsM5tAfgwVwbepmuQYs5RYh889jX
