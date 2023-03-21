@@ -1,6 +1,7 @@
 from sqlalchemy import create_engine, text
 
 db_connection_string = "mysql+pymysql://lecyohrec1w4m8jbalj9:pscale_pw_Av5oQiypb5Wd9LDHsM5tAfgwVwbepmuQYs5RYh889jX@us-east.connect.psdb.cloud/jovincareers?charset=utf8mb4"
+
 # engine = create_engine("mysql+pymysql://username:password@host/database?charset=utf8mb4")
 engine = create_engine(
     db_connection_string,
@@ -16,9 +17,15 @@ def load_jobs_from_db():
     result = conn.execute(text("select * from jobs"))
     jobs = []
     for row in result.all():
-        jobs.append(dict(row))
+        jobs.append(row._mapping)
   return jobs
 
+# with engine.connect() as conn:
+#     result = conn.execute(text("select * from jobs"))
+#     jobs = []
+#     for row in result.all():
+#         print(row._mapping)
+#         print(type(row))
 
 # with engine.connect() as conn:
 #     result = conn.execute(text("select * from jobs"))
