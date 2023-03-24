@@ -92,7 +92,7 @@ $$
       engine = create_engine("mysql+pymysql://username:password@host/database?charset=utf8mb4")
      ```
 4. **遇到问题**：把sqlalchemy row变成python中的字典形式
-   看着教程直接用的```dict()```，自己运行时却不断报错，经google搜索，在stackoverflow上看到了如下回答：
+   <br>看着教程直接用的```dict()```，自己运行时却不断报错，经google搜索，在stackoverflow上看到了如下回答：
    ```python
    for row in resultproxy:
       row_as_dict = row._mapping  # SQLAlchemy 1.4 and greater
@@ -100,7 +100,7 @@ $$
    ```
    原来是不同版本的SQLAlchemy对应的方法不一样，于是采用```row._mapping```，成功运行！
 5. **遇到问题**：隐私安全保护
-   由于教程是在在线IDE编写代码的，所以可以直接创建一个系统环境变量（system environment variables）里的 secrets ，用于保护连接数据库时的账号密码。
+   <br>由于教程是在在线IDE编写代码的，所以可以直接创建一个系统环境变量（system environment variables）里的 secrets ，用于保护连接数据库时的账号密码。
    我直接用的pycharm，这一步暂时不知道怎么做，所以跳过了这一步。
 ## 后续 - 教程之外
 1. 美化申请表页面
