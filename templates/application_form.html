@@ -1,34 +1,37 @@
-<h4>Application Form</h4>
-<form action="/job/{{job['id']}}/apply" method="post">
-    <div class="mb-2">
-        <label>Full Name</label><br>
-        <input type="text" name="full_name" required placeholder="Bruce Wayne">
-    </div>
+<h4 class="text-center">Application Form</h4>
+<div class="container" style="padding: 6px 350px;">
+    <form action="/job/{{job['id']}}/apply" method="post">
+        <div class="mb-3">
+            <label style="padding: 6px;">Full Name</label>
+            <input class="form-control" type="text" name="full_name" required placeholder="Bruce Wayne">
+        </div>
 
-    <div class="mb-2">
-        <label">Email</label><br>
-        <input type="text" name="email" required placeholder="bruce@wayne.com">
-    </div>
-    
-    <div class="mb-2">
-        <label">LinkedIn URL</label><br>
-        <input type="url" name="linkedin_url" placeholder="https://linked.com/in/brucewayne">
-    </div>
+        <div class="mb-3">
+            <label style="padding: 6px;">Email</label>
+            <input class="form-control" type="text" name="email" required placeholder="bruce@wayne.com">
+        </div>
+        
+        <div class="mb-3">
+            <label style="padding: 6px;">LinkedIn URL</label>
+            <input class="form-control" type="url" name="linkedin_url" placeholder="https://linked.com/in/brucewayne">
+        </div>
 
-    <div class="mb-2">
-        <label">Education</label><br>
-        <textarea name="education"></textarea>
-    </div>
+        <div class="mb-3">
+            <label style="padding: 6px;">Education</label>
+            <textarea class="form-control" name="education"></textarea>
+        </div>
 
-    <div class="mb-2">
-        <label">Work Experience</label><br>
-        <textarea name="work_experience"></textarea>
-    </div>
+        <div class="mb-3">
+            <label style="padding: 6px;">Work Experience</label>
+            <textarea class="form-control" name="work_experience"></textarea>
+        </div>
 
-    <div class="mb-2">
-        <label">Resume URL</label><br>
-        <input type="url" name="resume_url">
-    </div>
-
-    <input type="submit">
-</form>
+        <div class="mb-3">
+            <label style="padding: 6px;">Resume URL</label>
+            <input class="form-control" type="url" name="resume_url">
+        </div>
+        <div class="text-center">
+            <input type="submit" class="btn btn-primary" style="width: 200px;">
+        </div>
+    </form>
+</div>
