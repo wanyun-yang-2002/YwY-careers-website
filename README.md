@@ -75,8 +75,8 @@ $$
       - 看懂了，但没钱，没做这一步
 ## 数据库
 <b>实现功能：将职位信息（职位名称、工作地点等）存储在数据库中，能够从数据库中读取数据，动态地展示在前端页面上</b>
-在线数据库网站：https://planetscale.com/
-下载MySQL Workbench：https://dev.mysql.com/downloads/workbench/
+<br>在线数据库网站：https://planetscale.com/
+<br>下载MySQL Workbench：https://dev.mysql.com/downloads/workbench/
 1. 通过在线数据库中新建数据库，再将MySQL Workbench与在线数据库建立连接
 2. MySQL Workbench中，可以通过SQL语句进行数据插入等操作，也可以直接向表中输入数据
 3. 新建文件database.py
