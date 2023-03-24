@@ -2,7 +2,7 @@
 
 <br>
 
-***教程地址： [Web Development with Python Tutorial – Flask & Dynamic Database-Driven Web Apps](https://www.youtube.com/watch?v=yBDHkveJUf4&t=2217s)***
+***Youtube： [Web Development with Python Tutorial – Flask & Dynamic Database-Driven Web Apps](https://www.youtube.com/watch?v=yBDHkveJUf4&t=2217s)***
 
 <br>
 
